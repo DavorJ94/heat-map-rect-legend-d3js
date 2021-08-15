@@ -1,0 +1,93 @@
+body {
+  background-color: #708090;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#title {
+  font-size: 1.5em;
+  text-anchor: middle;
+  fill: black;
+}
+#description {
+  font-size: 1em;
+  text-anchor: middle;
+  fill: black;
+}
+.xAxisLabel {
+  font-size: 2em;
+  fill: black;
+}
+.yAxisLabel {
+  font-size: 2em;
+  fill: black;
+  text-anchor: middle;
+}
+#y-axis {
+  font-size: 0.75em;
+}
+#x-axis {
+  font-size: 0.75em;
+}
+
+rect.cell:hover {
+  stroke: black;
+  cursor: pointer;
+  stroke-width: 2px;
+}
+
+.textSource {
+  font-style: italic;
+  font-size: 12px;
+  text-anchor: end;
+  fill: #464442;
+}
+.linkSource {
+  fill: #464442;
+  text-decoration: none;
+}
+a {
+  text-decoration: underline;
+  font-weight: bold;
+  color: white;
+}
+.nameAuthor {
+  font-size: 30px;
+  padding-bottom: 30px;
+  margin: auto;
+  color: white;
+  margin-top: 30px;
+  text-shadow: 2px 2px #000000;
+}
+#legend .swatch {
+  stroke: black;
+}
+#legend .label {
+  font-size: 10px;
+  font-family: Arial;
+  font-weight: bold;
+}
+/* .cell > text:hover {
+  text-decoration: none;
+  stroke: none;
+} */
+.cell > .swatch:hover {
+  text-decoration: none;
+  cursor: pointer;
+  stroke: black;
+  stroke-width: 2px;
+}
+#tooltip {
+  position: absolute;
+  width: 160px;
+  min-height: 20px;
+  padding: 15px;
+  font-size: 18px;
+  background: black;
+  font-family: Arial;
+  border-radius: 12px;
+  font-weight: bold;
+  pointer-events: none;
+  color: white;
+  text-align: center;
+}
